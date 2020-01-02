@@ -16,3 +16,36 @@
 ### js原始数据类型有哪些？
 
 boolean null undefined number string symbol bigint
+
+# 第二天
+### html 元素有哪些
+  h1~h6 
+  div
+  p
+  span 
+  br 换行
+  hr 分割线
+  ul ol li dl dt dd 
+  img 
+  audio 
+  video 
+  header 
+  nav 
+  section 
+  aside 
+  article 
+  footer 
+### css有哪些新特性
+  border-radius 
+  box-shadow 
+  text-shadow 
+  transform 
+  transition
+  ::after before
+  box-sizing
+### 用js封装一个函数去掉字符串空格 
+(```)
+ function get(str) {
+        return str.replace(/\s*/g, '')
+ }
+(```)
