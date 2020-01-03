@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h2>html全局属性有哪些</h2>
+  <ul>
+    <li>class</li>
+    <li>id</li>
+    <li>alt</li>
+    <li>title</li>
+    <li>checked</li>
+    <li>disabled</li>
+    <li>type</li>
+    <li>href</li>
+    <li>src</li>
+    <li>width</li>
+    <li>height</li>
+    <li>value</li>
+    <li>replaceholder</li>
+  </ul>
+  <h2>页面上隐藏元素的方法有哪些</h2>
+  <ul>
+    <li>display: none</li>
+    <li>opacity: 0</li>
+    <li>visibility: hidden</li>
+    <li>把元素移到页面外</li>
+    <li>transform: scale(0)</li>
+  </ul>
+  <script>
+     function trim(str, del) {
+       if (typeof str === 'string') {
+         let index = str.lastIndexOf(del)
+         return str.substring(0, index) + str.substring(index+1, str.length)
+       }
+     }
+     let str = 'abcdefdd';
+     let newStr = trim(str, 'd');
+     console.log(newStr)
+  </script>
+</body>
+</html>
