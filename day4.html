@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h2>label都有哪些作用？并举相应的例子说明</h2>
+  <div>
+    <p>作用: 关联表单控件</p>
+    <label for="txt">内容</label>
+    <input type="text" id="txt" placeholder="请输入内容">
+  </div>
+
+  <h2>css选择器有哪些?css哪些样式可以继承</h2>
+  <div>
+    <h3>css选择器</h3>
+    <ul>
+      <li>.class 类选择器 </li>
+      <li>#id id选择器 </li>
+      <li> * 通配符选择器</li>
+      <li>p 标签选择器</li>
+      <li>:after 伪类</li>
+      <li>div>p 子代选择器</li>
+      <li>div span 后代选择器</li>
+      <li>div +p 兄弟选择器</li>
+      <li>div['name'] 属性选择器</li>
+    </ul>
+    <h3>继承的样式</h3>
+    <ul>
+      <li>font-size</li>
+      <li>font-weight</li>
+      <li>font-family</li>
+      <li>font-style</li>
+      <li>color</li>
+      <li>text-aligin</li>
+      <li>text-indent</li>
+    </ul>
+  </div>
+  <h2>用递归算法实现，数组长度为5且元素的随机数在2-32间不重复的值</h2>
+  <script>
+    var arr = new Array(5);
+    var i = 0;
+    randomArr(arr);
+    function randomArr(arr) {
+        let num = Math.floor(Math.random()*31 + 2)
+        if (!arr.includes(num)){
+            arr[i] = num;
+            i++;
+        } else {
+            num = randomNumber();
+        }
+        if (i>=arr.length){
+            console.log(arr);
+            return;
+        }else{
+            randomArr(arr,num)
+        }
+    }
+  </script>
+</body>
+</html>
